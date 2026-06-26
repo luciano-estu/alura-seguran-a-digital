@@ -1,0 +1,16 @@
+const checkboxes = document.querySelectorAll(".checkbox-personalizado");
+
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+
+        const opcoes = {
+            maiusculas: document.querySelector("#maiusculas").checked,
+            minusculas: document.querySelector("#minusculas").checked,
+            numeros: document.querySelector("#numeros").checked,
+            simbolos: document.querySelector("#simbolos").checked
+        };
+
+        console.clear();
+        console.table(opcoes);
+    });
+});
